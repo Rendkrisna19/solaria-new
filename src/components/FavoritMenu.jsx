@@ -35,7 +35,7 @@ const FavoritMenu = () => {
 
 </div>
   return (
-    <div className="relative w-full max-w-6xl mx-auto text-center py-10 px-4 md:px-8 overflow-hidden" id="menu">
+    <div className="relative w-full max-w-6xl mx-auto text-center py-10 px-4 md:px-8 overflow-hidden">
       
       <img
         src={BgLeft}

@@ -78,8 +78,16 @@ const Navbar = () => {
                 Home
               </RouterLink>
             </li>
+            <li>
+          <RouterLink
+            to="/Menu"
+            className="cursor-pointer text-pink-600 hover:text-gray-600 transition-all duration-300"
+          >
+            MENU
+          </RouterLink>
+        </li>
             {[
-              { name: "Menu", to: "menu" },
+              
               { name: "Promo", to: "promo" },
               { name: "Location", to: "location" },
               { name: "Contact Us", to: "contact" },
