@@ -54,7 +54,7 @@ const Navbar = () => {
             to="/About"
             className="cursor-pointer text-pink-600 hover:text-gray-600 transition-all duration-300"
           >
-            ABOUT US
+            ABOUT 
           </RouterLink>
         </li>
       </ul>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 className="cursor-pointer text-pink-600 hover:text-gray-600 transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                HOME
               </RouterLink>
             </li>
             <li>
@@ -88,9 +88,9 @@ const Navbar = () => {
         </li>
             {[
               
-              { name: "Promo", to: "promo" },
-              { name: "Location", to: "location" },
-              { name: "Contact Us", to: "contact" },
+              { name: "PROMO", to: "promo" },
+              { name: "LOCATION", to: "location" },
+              { name: "CONTACT US", to: "contact" },
             ].map((item, index) => (
               <li key={index}>
                 <ScrollLink
@@ -111,7 +111,7 @@ const Navbar = () => {
                 className="cursor-pointer text-pink-600 hover:text-gray-600 transition-all duration-300"
                 onClick={() => setIsOpen(false)}
               >
-                About Us
+                ABOUT
               </RouterLink>
             </li>
           </ul>
