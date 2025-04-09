@@ -4,7 +4,7 @@ import ListDropdown from "./ListDropdown";
 import bannerImage from "../../assets/bannnersolaria.png";
 // import Bgpaper from "../../assets/paperpink.jpg";
 import Scroll from "./ScrollTop"
-import DownlodMenu from "./DwnldMenu"
+import Kategori from "./Kategori"
 
 export default function Menu() {
   return (
@@ -38,7 +38,7 @@ export default function Menu() {
 
         {/* Komponen dropdown */}
         <ListDropdown />
-        <DownlodMenu />
+        <Kategori />
         <Scroll />
       </div>
     </div>
