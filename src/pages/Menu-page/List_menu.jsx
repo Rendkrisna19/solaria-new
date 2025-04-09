@@ -33,7 +33,7 @@ const menuItems = [
   },
   {
     name: "Udang Goreng Telur Asin",
-    image: Menu2,
+    image: Menu4,
     rating: 5,
   },
   {
@@ -41,16 +41,7 @@ const menuItems = [
     image: Menu3,
     rating: 4,
   },
-  {
-    name: "Udang Goreng Roti Wijen",
-    image: Menu4,
-    rating: 5,
-  },
-  {
-    name: "Udang Goreng Roti Wijen",
-    image: Menu4,
-    rating: 5,
-  },
+ 
 ];
 
 export default function List_Menu() {
@@ -71,7 +62,7 @@ export default function List_Menu() {
       className="py-16 px-4 md:px-16 bg-cover bg-center min-h-screen"
       // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {menuItems.map((item, index) => (
           <div
             key={index}

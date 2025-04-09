@@ -72,7 +72,7 @@ const RouteApp = () => {
     return (
       <div className="App">
         <Navbar />
-        <Kategori />
+        {/* <Kategori /> */}
         {children}
         <Footer />
       </div>
