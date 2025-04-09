@@ -2,21 +2,16 @@ import React, { useState } from 'react';
 import Kategori from '../../Kategori';
 
 const menuItems = [
-  { indo: 'Nasi Goreng Kepiting', eng: 'Crab Fried Rice' },
-  { indo: 'Nasi Goreng Kambing', eng: 'Lamb Fried Rice' },
-  { indo: 'Nasi Goreng Seafood', eng: 'Seafood Fried Rice' },
-  { indo: 'Nasi Goreng Teri Medan', eng: 'Medanese Anchovy Fried Rice' },
-  { indo: 'Nasi Goreng Tom Yum Seafood', eng: 'Tom Yum Seafood Fried Rice' },
-  { indo: 'Smocked Chicken Fried Rice', eng: 'Smoked Chicken Fried Rice' },
-  { indo: 'Nasi Goreng Italy', eng: 'Italian Fried Rice' },
-  { indo: 'Nasi Goreng Bebek Cabe Ijo', eng: 'Green Chili Duck Fried Rice' },
-  { indo: 'Nasi Goreng Sapi Cabe Ijo', eng: 'Green Chili Beef Fried Rice' },
-  { indo: 'Nasi Goreng Teri Cabe Ijo', eng: 'Green Chili Anchovy Fried Rice' },
-  { indo: 'Nasi Goreng Modern', eng: 'Modern Fried Rice' },
-  { indo: 'Nasi Goreng Petai', eng: 'Stinky Bean Fried Rice' },
-  { indo: 'Nasi Goreng Sosis', eng: 'Sausage Fried Rice' },
-  { indo: 'Nasi Goreng Tom Yum Ayam', eng: 'Tom Yum Chicken Fried Rice' },
-  { indo: 'Nasi Goreng', eng: 'Fried Rice' },
+    { indo: 'French Fries', eng: 'French Fries' },
+    { indo: 'Fish Ball Satay', eng: 'Fish Ball Satay' },
+    { indo: 'Prawn Ball Satay', eng: 'Prawn Ball Satay' },
+    { indo: 'Spring Roll', eng: 'Spring Roll' },
+    { indo: 'Fish Cake', eng: 'Fish Cake' },
+    { indo: 'Cuttlefish Ball Satay', eng: 'Cuttlefish Ball Satay' },
+    { indo: 'Crispy Mini Wonton', eng: 'Crispy Mini Wonton' },
+    { indo: 'Siomay', eng: 'Siomay (Steamed Dumpling)' },
+    { indo: 'Wedges with Bolognaise Sauce', eng: 'Wedges with Bolognaise Sauce' },
+    { indo: 'Chikado', eng: 'Chikado' },
 ];
 
 
@@ -25,7 +20,7 @@ export default function MenuGrid() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24">
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Menu <span className='text-pink-700'>Nasi</span></h1>
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Menu <span className='text-pink-700'>Snack</span></h1>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-2">
         {menuItems.map((item, index) => (

@@ -8,8 +8,9 @@ export default function Kategori() {
     { label: 'Minuman', path: 'minuman' },
     { label: 'Nasi', path: 'nasi' },
     { label: 'Mie', path: 'mie' },
-    { label: 'Sayur', path: 'sayur' },
+    { label: 'Bowl', path: 'sayur' },
     { label: 'Add On', path: 'addon' },
+    { label: 'Snack', path: 'snack' },
     { label: 'All', path: '' },
   ];
 

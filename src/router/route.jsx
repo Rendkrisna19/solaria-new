@@ -12,6 +12,7 @@ import Nasi from '../pages/Menu-page/kategori/Nasi/index';
 import Mie from '../pages/Menu-page/kategori/Mie/index';
 import Sayur from '../pages/Menu-page/kategori/Sayur/index';
 import AddOn from '../pages/Menu-page/kategori/Add-on/index';
+import Snack from "../pages/Menu-page/kategori/Snack/index"
 
 // Import komponen Kategori
 import Kategori from "../pages/Menu-page/Kategori";
@@ -50,6 +51,7 @@ const RouteApp = () => {
             <Route path='/menu/mie' element={<KategoriLayout><Mie /></KategoriLayout>} />
             <Route path='/menu/sayur' element={<KategoriLayout><Sayur /></KategoriLayout>} />
             <Route path='/menu/addon' element={<KategoriLayout><AddOn /></KategoriLayout>} />
+            <Route path='/menu/snack' element={<KategoriLayout><Snack /></KategoriLayout>} />
           </Routes>
         </Suspense>
       )}

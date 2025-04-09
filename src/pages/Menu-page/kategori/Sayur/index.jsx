@@ -1,39 +1,52 @@
 import React, { useState } from 'react';
-import Kategori from "../../Kategori";
+import Kategori from '../../Kategori';
 
 const menuItems = [
-  { id: 1, indo: 'Nasi Goreng Spesial', eng: 'Special Fried Rice' },
-  { id: 2, indo: 'Mie Ayam Bakso', eng: 'Chicken Noodles with Meatballs' },
-  { id: 3, indo: 'Sate Ayam Madura', eng: 'Madura Chicken Satay' },
-  { id: 4, indo: 'Ayam Geprek Level 5', eng: 'Crispy Spicy Chicken Level 5' },
-  { id: 5, indo: 'Soto Betawi', eng: 'Jakarta Beef Soup' },
-  { id: 6, indo: 'Rendang Padang', eng: 'Padang Beef Rendang' },
+  { indo: 'Express Bowl', eng: 'Express Bowl' },
+  { indo: 'Express Bowl Mix Rica-Rica', eng: 'Express Bowl Mix Rica-Rica' },
+  { indo: 'Express Bowl Mix Mayo', eng: 'Express Bowl Mix Mayo' },
+  { indo: 'Express Bowl Mix Mentega', eng: 'Express Bowl Mix Butter Sauce' },
+  { indo: 'Express Bowl Mix Teriyaki', eng: 'Express Bowl Mix Teriyaki' },
+  { indo: 'Express Bowl Mix Asam Manis', eng: 'Express Bowl Mix Sweet and Sour' },
+  { indo: 'Express Bowl Ikan Rica-Rica', eng: 'Express Bowl Fish Rica-Rica' },
+  { indo: 'Express Bowl Ikan Mayo', eng: 'Express Bowl Fish Mayo' },
+  { indo: 'Express Bowl Ikan Mentega', eng: 'Express Bowl Fish with Butter Sauce' },
+  { indo: 'Express Bowl Ikan Teriyaki', eng: 'Express Bowl Fish Teriyaki' },
+  { indo: 'Express Bowl Ikan Asam Manis', eng: 'Express Bowl Fish Sweet and Sour' },
+  { indo: 'Express Bowl Ayam Rica-Rica', eng: 'Express Bowl Chicken Rica-Rica' },
+  { indo: 'Express Bowl Ayam Mayo', eng: 'Express Bowl Chicken Mayo' },
+  { indo: 'Express Bowl Ayam Mentega', eng: 'Express Bowl Chicken with Butter Sauce' },
+  { indo: 'Express Bowl Ayam Teriyaki', eng: 'Express Bowl Chicken Teriyaki' },
+  { indo: 'Express Bowl Ayam Asam Manis', eng: 'Express Bowl Chicken Sweet and Sour' },
 ];
 
-const MenuGrid = () => {
+
+export default function MenuGrid() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-300 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Menu <span className='text-pink-700'>Sayur</span></h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24">
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Express <span className='text-pink-700'>Bowl</span></h1>
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-2">
         {menuItems.map((item, index) => (
           <div
-            key={item.id}
-            className={`rounded-2xl shadow-lg transition duration-300 p-6 text-center cursor-pointer transform hover:-translate-y-1 
-              ${hoveredIndex === index ? 'bg-pink-500 text-white shadow-2xl' : 'bg-white text-gray-700'}`}
+            key={index}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
+            className={`relative p-4 rounded-md border-l-4 shadow transition-all duration-300 cursor-pointer 
+          ${hoveredIndex === index
+                ? 'bg-pink-500 text-white border-pink-500'
+                : 'bg-white text-gray-800 border-pink-200 hover:bg-pink-500 hover:text-white hover:border-pink-500'}`}
           >
-            <h2 className="text-sm font-normal">
+            <h2 className="text-sm sm:text-base font-medium tracking-wide transition-all duration-300">
               {hoveredIndex === index ? item.eng : item.indo}
             </h2>
           </div>
+
         ))}
       </div>
       <Kategori />
     </div>
   );
-};
-
-export default MenuGrid;
+}
