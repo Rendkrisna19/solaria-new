@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import Kategori from '../../Kategori';
+import BannerMenu from "../../../../components/layout/BannerMenu"
 
 const menuPaket = [
   { indo: 'Nasi + Fillet Ikan Goreng Mentega', eng: 'Rice + Fried Fish Fillet with Butter' },
@@ -100,8 +101,12 @@ export default function MenuGrid() {
     ));
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24">
-      {/* Judul Halaman */}
+    
+    <div>
+      {/* Banner header */}
+      <BannerMenu/>
+      <Kategori />
+      <div className='className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24"'>
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
         Menu <span className="text-pink-700">Makanan</span>
       </h1>
@@ -145,8 +150,7 @@ export default function MenuGrid() {
         <h2 className="text-xl font-bold text-pink-700 mb-4">Menu Porsi</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{renderMenu(menuPorsi)}</div>
       </div>
-
-      <Kategori />
+      </div>
     </div>
   );
 }

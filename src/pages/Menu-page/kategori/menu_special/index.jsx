@@ -172,7 +172,7 @@ export default function MenuMinuman() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24">
       {/* Judul Halaman */}
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
-        Menu <span className="text-pink-700">Minuman</span>
+        Menu <span className="text-pink-700"> Menu es</span>
       </h1>
 
       {/* Navigasi Scroll */}

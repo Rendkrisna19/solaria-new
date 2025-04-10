@@ -6,13 +6,16 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
 // Import kategori menu
-import Makanan from '../pages/Menu-page/kategori/Makanan/Index';
-import Minuman from '../pages/Menu-page/kategori/Minuman/index';
-import Nasi from '../pages/Menu-page/kategori/Nasi/index';
-import Mie from '../pages/Menu-page/kategori/Mie/index';
+import MenuPaket from '../pages/Menu-page/kategori/menu_paket/Index';
+import MenuSpecial from '../pages/Menu-page/kategori/menu_special/index';
+import MenuPorsi from '../pages/Menu-page/kategori/menu_porsi/index';
+import NasiGoreng from '../pages/Menu-page/kategori/nasi_goreng/index';
 import Sayur from '../pages/Menu-page/kategori/Sayur/index';
 import AddOn from '../pages/Menu-page/kategori/Add-on/index';
 import Snack from "../pages/Menu-page/kategori/Snack/index"
+import MieGoreng from "../pages/Menu-page/kategori/mie_goreng/index"
+import Kwetiau from "../pages/Menu-page/kategori/kwetiau/index"
+import Bihun from "../pages/Menu-page/kategori/bihun/index"
 
 // Import komponen Kategori
 import Kategori from "../pages/Menu-page/Kategori";
@@ -45,10 +48,13 @@ const RouteApp = () => {
             <Route path='/menu' element={<WithLayout><Menu /></WithLayout>} />
 
             {/* Routing halaman kategori menu dengan komponen Kategori */}
-            <Route path='/menu/makanan' element={<KategoriLayout><Makanan /></KategoriLayout>} />
-            <Route path='/menu/minuman' element={<KategoriLayout><Minuman /></KategoriLayout>} />
-            <Route path='/menu/nasi' element={<KategoriLayout><Nasi /></KategoriLayout>} />
-            <Route path='/menu/mie' element={<KategoriLayout><Mie /></KategoriLayout>} />
+            <Route path='/menu/paket' element={<KategoriLayout><MenuPaket /></KategoriLayout>} />
+            <Route path='/menu/special' element={<KategoriLayout><MenuSpecial /></KategoriLayout>} />
+            <Route path='/menu/porsi' element={<KategoriLayout><MenuPorsi /></KategoriLayout>} />
+            <Route path='/menu/nasi-goreng' element={<KategoriLayout><NasiGoreng/></KategoriLayout>} />
+            <Route path='/menu/mie-goreng' element={<KategoriLayout><MieGoreng /></KategoriLayout>} />
+            <Route path='/menu/kwetiau' element={<KategoriLayout><Kwetiau /></KategoriLayout>} />
+            <Route path='/menu/bihun' element={<KategoriLayout><Kwetiau /></KategoriLayout>} />
             <Route path='/menu/sayur' element={<KategoriLayout><Sayur /></KategoriLayout>} />
             <Route path='/menu/addon' element={<KategoriLayout><AddOn /></KategoriLayout>} />
             <Route path='/menu/snack' element={<KategoriLayout><Snack /></KategoriLayout>} />
