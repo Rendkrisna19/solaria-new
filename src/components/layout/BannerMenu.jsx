@@ -2,7 +2,8 @@ import React from 'react';
 import bannerImage from '../../assets/bannnersolaria.png'; 
 const BannerMenu = () => {
   return (
-    <div className="w-full min-h-screen relative">
+    <div className='pt-20 md:pt-24 bg-cover bg-center'>
+    <div className="w-full relative">
       <img
         src={bannerImage}
         alt="Banner Menu"
@@ -10,6 +11,7 @@ const BannerMenu = () => {
         loading="eager"
       />
       <div className="absolute inset-0 bg-gray-200 animate-pulse z-[-1]" />
+    </div>
     </div>
   );
 };

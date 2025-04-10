@@ -8,9 +8,8 @@ import BannerMenu from "../../components/layout/BannerMenu"
 
 export default function Menu() {
   return (
-    <div
-      className="pt-20 md:pt-24 bg-cover bg-center min-h-screen">
-        <BannerMenu/>
+    <div>
+      <BannerMenu/>
       <Kategori />
       <div className="pt-8  text-center">
         <h2 className="text-4xl font-semibold text-black">

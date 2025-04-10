@@ -106,7 +106,7 @@ export default function MenuGrid() {
       {/* Banner header */}
       <BannerMenu/>
       <Kategori />
-      <div className='className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex flex-col items-center py-10 px-4 pt-28 md:pt-24"'>
+      <div className="bg-gradient-to-br from-blue-50 to-whit py-10 px-4 ">
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
         Menu <span className="text-pink-700">Makanan</span>
       </h1>
