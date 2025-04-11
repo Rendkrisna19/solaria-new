@@ -56,7 +56,7 @@ const CulinaryCarousel = () => {
   const groupedItems = groupItems(menuItems, itemsPerSlide);
 
   return (
-    <div className="bg-pink-500 py-10 text-center text-white">
+    <div className="bg-pink-700 py-10 text-center text-white pt-28 md:pt-24">
       <h2 className="text-2xl font-bold mb-6">Explore Our Culinary</h2>
       <div className="max-w-6xl mx-auto px-4">
         <Carousel

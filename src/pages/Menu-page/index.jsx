@@ -4,12 +4,12 @@ import ListDropdown from "./ListDropdown";
 import bannerImage from "../../assets/bannnersolaria.png";
 import Scroll from "./ScrollTop"
 import Kategori from "./Kategori"
-import BannerMenu from "../../components/layout/BannerMenu"
+// import BannerMenu from "../../components/layout/BannerMenu"
 
 export default function Menu() {
   return (
     <div>
-      <BannerMenu/>
+      {/* <BannerMenu/> */}
       <Kategori />
       <div className="pt-8  text-center">
         <h2 className="text-4xl font-semibold text-black">
